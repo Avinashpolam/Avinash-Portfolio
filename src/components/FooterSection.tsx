@@ -16,7 +16,7 @@ const FooterSection = () => {
             Email Me
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/avinash-reddy-polam-8107621b2/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-3 rounded-lg bg-secondary text-secondary-foreground font-medium text-sm hover:bg-surface-hover transition-colors border border-border"
