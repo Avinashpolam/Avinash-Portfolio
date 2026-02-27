@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, MapPin, Linkedin, ChevronDown } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const HeroSection = () => {
   return (
@@ -16,6 +17,11 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          <div className="mb-8 flex justify-center">
+            <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-2 border-primary/40 glow-md">
+              <img src={profilePhoto} alt="Avinash Reddy Polam" className="w-full h-full object-cover object-top" />
+            </div>
+          </div>
           <p className="font-mono text-primary text-sm tracking-widest uppercase mb-6">
             Software Developer
           </p>
