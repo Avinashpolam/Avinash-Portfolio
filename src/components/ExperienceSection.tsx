@@ -5,7 +5,7 @@ interface Job {
   role: string;
   period: string;
   location: string;
-  highlights: string[];
+  description: string;
 }
 
 const jobs: Job[] = [
@@ -14,28 +14,16 @@ const jobs: Job[] = [
     role: "Software Developer",
     period: "Aug 2024 – Present",
     location: "USA",
-    highlights: [
-      "Designed backend services using Java, Spring Boot, and REST APIs supporting 5 core banking workflows with Python-based data processing integration.",
-      "Built event-driven pipelines with Apache Kafka handling 2.4M transaction events per business day, feeding ML scoring pipelines.",
-      "Optimized PostgreSQL queries reducing nightly reconciliation batch runtime from 6 hours to 2 hours.",
-      "Automated CI/CD with Jenkins & Docker, removing 11 hours of manual release effort per cycle.",
-      "Authored tests with JUnit & Mockito blocking 160+ regression defects prior to UAT.",
-      "Managed 14 microservices on AWS (EC2, RDS, CloudWatch) under internal resiliency standards.",
-    ],
+    description:
+      "Designed backend services using Java, Spring Boot, and REST APIs to support 5 core banking workflows with Python-based data processing integration. Built event-driven pipelines with Apache Kafka handling 2.4M transaction events per business day, feeding ML scoring pipelines. Optimized PostgreSQL queries to reduce nightly reconciliation batch runtime from 6 hours to 2 hours. Automated CI/CD with Jenkins & Docker, removing 11 hours of manual release effort per cycle. Authored tests with JUnit & Mockito, blocking 160+ regression defects prior to UAT, and managed 14 microservices on AWS (EC2, RDS, CloudWatch) under internal resiliency standards.",
   },
   {
     company: "Airbnb",
     role: "Software Engineer",
     period: "May 2020 – Jul 2022",
     location: "India",
-    highlights: [
-      "Built backend components using Java & Spring Boot supporting listing and booking workflows for 1.8M daily active users.",
-      "Delivered 12 UI enhancements with React.js for search and listing detail pages.",
-      "Managed 900K+ property and reservation records with PostgreSQL and JPA/Hibernate.",
-      "Integrated async communication with Apache Kafka for real-time booking confirmations.",
-      "Identified 70+ logic/data consistency issues through comprehensive test coverage.",
-      "Delivered 6 sprint milestones on schedule across distributed engineering teams.",
-    ],
+    description:
+      "Built backend components using Java & Spring Boot to support listing and booking workflows for 1.8M daily active users. Delivered 12 UI enhancements with React.js for search and listing detail pages, and managed 900K+ property and reservation records with PostgreSQL and JPA/Hibernate. Integrated asynchronous communication with Apache Kafka for real-time booking confirmations. Identified 70+ logic and data consistency issues through comprehensive test coverage and delivered 6 sprint milestones on schedule across distributed engineering teams.",
   },
 ];
 
@@ -75,14 +63,9 @@ const ExperienceSection = () => {
                 </div>
               </div>
 
-              <ul className="space-y-3">
-                {job.highlights.map((h, j) => (
-                  <li key={j} className="flex items-start gap-3 text-sm text-secondary-foreground leading-relaxed">
-                    <span className="text-primary mt-1.5 text-xs">▸</span>
-                    {h}
-                  </li>
-                ))}
-              </ul>
+              <p className="text-sm text-secondary-foreground leading-relaxed">
+                {job.description}
+              </p>
             </motion.div>
           ))}
         </div>
