@@ -53,25 +53,9 @@ const HeroSection = () => {
             <MapPin className="w-4 h-4 text-primary" />
             <span>Commerce, Texas</span>
           </span>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface hover:bg-surface-hover border border-border hover:border-glow transition-all duration-300">
+          <a href="https://www.linkedin.com/in/avinash-reddy-polam-8107621b2/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface hover:bg-surface-hover border border-border hover:border-glow transition-all duration-300">
             <Linkedin className="w-4 h-4 text-primary" />
-            <span>​https://www.linkedin.com/in/avinash-reddy-polam-8107621b2/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </span>
+            <span>LinkedIn</span>
           </a>
         </motion.div>
 
