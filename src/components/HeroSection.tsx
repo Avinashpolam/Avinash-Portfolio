@@ -15,8 +15,8 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
+          transition={{ duration: 0.8 }}>
+
           <div className="mb-8 flex justify-center">
             <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-2 border-primary/40 glow-md">
               <img src={profilePhoto} alt="Avinash Reddy Polam" className="w-full h-full object-cover object-top" />
@@ -39,8 +39,8 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground"
-        >
+          className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
+
           <a href="mailto:avinashr.polam@gmail.com" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface hover:bg-surface-hover border border-border hover:border-glow transition-all duration-300">
             <Mail className="w-4 h-4 text-primary" />
             <span>avinashr.polam@gmail.com</span>
@@ -55,21 +55,29 @@ const HeroSection = () => {
           </span>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface hover:bg-surface-hover border border-border hover:border-glow transition-all duration-300">
             <Linkedin className="w-4 h-4 text-primary" />
-            <span>LinkedIn</span>
+            <span>​https://www.linkedin.com/in/avinash-reddy-polam-8107621b2/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </span>
           </a>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 1 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
-        >
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 1 }} className="absolute bottom-10 left-1/2 -translate-x-1/2">
+
           <ChevronDown className="w-6 h-6 text-muted-foreground animate-bounce" />
         </motion.div>
       </div>
-    </section>
-  );
-};
-
-export default HeroSection;
+    </section>);};export default HeroSection;
