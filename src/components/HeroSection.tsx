@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Linkedin, ChevronDown } from "lucide-react";
+import { Mail, Linkedin, ChevronDown } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpeg";
 
 const HeroSection = () => {
@@ -49,10 +49,10 @@ const HeroSection = () => {
             <span className="text-primary font-mono text-xs">☎</span>
             <span>(469) 694-6389</span>
           </a>
-          <span className="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface border border-border">
-            <MapPin className="w-4 h-4 text-primary" />
-            <span>Commerce, Texas</span>
-          </span>
+          <a href="/Avinash_Resume.pdf" download className="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface hover:bg-surface-hover border border-border hover:border-glow transition-all duration-300">
+            <span className="text-primary font-mono text-xs">📄</span>
+            <span>Resume</span>
+          </a>
           <a href="https://www.linkedin.com/in/avinash-reddy-polam-8107621b2/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface hover:bg-surface-hover border border-border hover:border-glow transition-all duration-300">
             <Linkedin className="w-4 h-4 text-primary" />
             <span>LinkedIn</span>
