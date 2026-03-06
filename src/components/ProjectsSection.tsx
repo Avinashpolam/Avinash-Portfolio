@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { Brain, BarChart3, Image, Github } from "lucide-react";
-
-const GITHUB_PROFILE = "https://github.com/avinash-polam";
+import { Brain, BarChart3, Image, Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -9,21 +7,24 @@ const projects = [
     title: "Security Breach Detection with Deep Learning",
     description: "Intelligent surveillance solution using CNNs and image processing to identify intrusions via facial patterns, height profiles, thermal signals, and iris recognition.",
     tech: ["TensorFlow", "Keras", "OpenCV", "Deep Learning", "CNN"],
-    github: GITHUB_PROFILE,
+    github: "https://github.com/Avinashpolam/Enhanced-Security-System-with-Breach-Detection-using-Deep-Learning",
+    live: "https://security-breach-detectione.lovable.app/",
   },
   {
     icon: BarChart3,
     title: "Student Analysis & Ranking Automation",
     description: "Automated evaluation platform generating student rankings with audit trails for academic performance and compliance reporting.",
     tech: ["Python", "SQL", "Rule-based Logic", "Analytics"],
-    github: GITHUB_PROFILE,
+    github: "https://github.com/Avinashpolam/student-analysis-and-ranking-automation-system",
+    live: "https://swiftrank-flow.lovable.app",
   },
   {
     icon: Image,
     title: "Data Augmentation Script – Triton Robotics",
     description: "Scalable image augmentation utility generating thousands of pre-labeled training images for robotics-focused ML models.",
     tech: ["Python", "OpenCV", "Keras", "Computer Vision"],
-    github: GITHUB_PROFILE,
+    github: "https://github.com/Avinashpolam/data-augmentation-script",
+    live: "https://data-augmentation-script.lovable.app",
   },
 ];
 
@@ -60,15 +61,26 @@ const ProjectsSection = () => {
                     <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                       {project.title}
                     </h3>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary transition-all duration-300 shrink-0"
-                      aria-label="View on GitHub"
-                    >
-                      <Github className="w-5 h-5" />
-                    </a>
+                    <div className="flex items-center gap-1 shrink-0">
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary transition-all duration-300"
+                        aria-label="View live site"
+                      >
+                        <ExternalLink className="w-5 h-5" />
+                      </a>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary transition-all duration-300"
+                        aria-label="View on GitHub"
+                      >
+                        <Github className="w-5 h-5" />
+                      </a>
+                    </div>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                     {project.description}
