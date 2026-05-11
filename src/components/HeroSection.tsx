@@ -30,8 +30,8 @@ const HeroSection = () => {
             <span className="text-gradient">Reddy</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-            4+ years building backend & full-stack applications in financial services and consumer tech. 
-            Java · Spring Boot · AWS · Kafka · Microservices
+            4+ years engineering scalable microservices and cloud-native backends across Finance and Tech.
+            Java · Spring Boot · Kafka · PostgreSQL · OpenAI · Kubernetes
           </p>
         </motion.div>
 

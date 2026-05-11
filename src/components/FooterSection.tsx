@@ -28,7 +28,7 @@ const FooterSection = () => {
 
         <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
           <MapPin className="w-3 h-3" />
-          Commerce, Texas
+          Dallas, TX
         </div>
         <p className="text-xs text-muted-foreground mt-4 font-mono">
           © {new Date().getFullYear()} Avinash Reddy Polam

@@ -6,14 +6,17 @@ interface SkillCategory {
 }
 
 const skillCategories: SkillCategory[] = [
-  { title: "Languages", skills: ["Java (8–17)", "JavaScript", "Python", "SQL"] },
-  { title: "Backend", skills: ["Spring Boot", "Spring MVC", "Spring Security", "Hibernate/JPA", "REST APIs", "Microservices"] },
-  { title: "Frontend", skills: ["React.js", "HTML5", "CSS3", "Bootstrap"] },
-  { title: "Databases", skills: ["PostgreSQL", "MySQL", "Oracle", "MongoDB"] },
-  { title: "Cloud & DevOps", skills: ["AWS (EC2, S3, RDS, EKS)", "Azure", "Docker", "Kubernetes", "Jenkins", "GitHub Actions"] },
-  { title: "Tools & Testing", skills: ["Maven", "Gradle", "Git", "JUnit", "Mockito", "Postman", "Swagger"] },
-  { title: "Messaging", skills: ["Apache Kafka"] },
-  { title: "Security", skills: ["JWT", "OAuth2", "OWASP"] },
+  { title: "Languages", skills: ["Java 17", "Python", "JavaScript", "SQL", "PL/SQL", "Shell"] },
+  { title: "Backend", skills: ["Spring Boot", "Spring Security", "Spring MVC", "Hibernate/JPA", "REST APIs", "Microservices"] },
+  { title: "Frontend", skills: ["React.js", "Thymeleaf", "HTML5", "CSS3", "Responsive Design"] },
+  { title: "Databases", skills: ["PostgreSQL", "Oracle DB", "MySQL", "SQL Server", "JDBC"] },
+  { title: "Cloud & DevOps", skills: ["AWS (EC2, S3, Lambda)", "Docker", "Kubernetes", "Helm", "Terraform", "GitLab", "Jenkins", "Bitbucket"] },
+  { title: "AI / ML", skills: ["OpenAI APIs", "LangChain", "LLM Integration", "scikit-learn", "TensorFlow", "spaCy", "Apache OpenNLP"] },
+  { title: "Monitoring", skills: ["Prometheus", "Grafana", "Service Dashboards", "Log Monitoring"] },
+  { title: "APIs & Security", skills: ["REST", "JWT", "OAuth 2.0", "Swagger/OpenAPI", "Postman", "RBAC"] },
+  { title: "Testing", skills: ["JUnit", "Mockito", "pytest", "Integration Testing", "Regression Testing"] },
+  { title: "Messaging & Integration", skills: ["Apache Kafka", "Keycloak", "Azure Intune", "Webhooks"] },
+  { title: "Build & Methodology", skills: ["Maven", "Gradle", "Agile/Scrum", "SDLC", "Code Reviews"] },
 ];
 
 const SkillsSection = () => {
