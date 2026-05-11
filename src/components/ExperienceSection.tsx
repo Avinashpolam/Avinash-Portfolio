@@ -15,15 +15,15 @@ const jobs: Job[] = [
     period: "Aug 2024 – Present",
     location: "USA",
     description:
-      "Designed backend services using Java, Spring Boot, and REST APIs to support 5 core banking workflows with Python-based data processing integration. Built event-driven pipelines with Apache Kafka handling 2.4M transaction events per business day, feeding ML scoring pipelines. Optimized PostgreSQL queries to reduce nightly reconciliation batch runtime from 6 hours to 2 hours. Automated CI/CD with Jenkins & Docker, removing 11 hours of manual release effort per cycle. Authored tests with JUnit & Mockito, blocking 160+ regression defects prior to UAT, and managed 14 microservices on AWS (EC2, RDS, CloudWatch) under internal resiliency standards.",
+      "Engineered production-grade microservices using Java 17, Spring Boot, and PostgreSQL, integrating RESTful APIs with Prometheus and Grafana to cut daily sync time by 19 hours across 5 global platforms. Streamlined CI/CD automation with GitLab, Docker, and Terraform with embedded scans and rollback logic, reducing release cycles by 3.5 hours. Designed an LLM-powered parser by integrating OpenAI APIs, scikit-learn, and LangChain into a Java backend to extract insights from 12,000+ documents and reduce legal review time by 11 days per quarter. Led architecture reviews to define monolith-to-Kubernetes migration strategy and introduced Helm for reproducible deployments while mentoring 2 developers across 2 core units.",
   },
   {
-    company: "Airbnb",
-    role: "Software Engineer",
+    company: "Dell Technologies",
+    role: "Software Developer",
     period: "May 2020 – Jul 2022",
     location: "India",
     description:
-      "Built backend components using Java & Spring Boot to support listing and booking workflows for 1.8M daily active users. Delivered 12 UI enhancements with React.js for search and listing detail pages, and managed 900K+ property and reservation records with PostgreSQL and JPA/Hibernate. Integrated asynchronous communication with Apache Kafka for real-time booking confirmations. Identified 70+ logic and data consistency issues through comprehensive test coverage and delivered 6 sprint milestones on schedule across distributed engineering teams.",
+      "Designed Java-based Spring Boot microservices for core orchestration workflows, scaling backend services to support 1.8M daily active users. Structured persistent data layers with PostgreSQL, reliably managing 3.5M+ telemetry and configuration records across environments. Implemented event-driven API communication via Apache Kafka, decoupling backend components to maintain stability during high-demand feature launches. Automated end-to-end testing frameworks using Python, pytest, and Java unit tests, eliminating 8 hours of manual validation per release. Integrated containerized workflows using Docker and CI/CD pipelines, standardizing deployments across staging and production while driving code reviews within cross-functional Agile pods.",
   },
 ];
 
